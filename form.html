@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header__buttons">
+                    <a href="tel:" class="main-button">Позвонить</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="form">
+        <div class="form__container">
+            <h5>Отличный выбор</h5>
+            <h4>Заполните анкету и получите деньги в течении 15 минут на карту</h4>
+            <div class="form__wrapper">
+                <form action="">
+                    <h6>Заполните контактные данные</h6>
+                    <span class="safe">Защита конфеденциальности данных</span>
+                    <label class="input-label" for="subname">Фамилия</label>
+                    <input class="input-text" type="text" id="subname" maxlength="15" required>
+                    <label class="input-label" for="name">Имя</label>
+                    <input class="input-text" type="text" id="name" maxlength="15" required>
+                    <label class="input-label" for="thirdname">Отчество</label>
+                    <input class="input-text" type="text" id="thirdname" required maxlength="20">
+                    <label class="input-label" for="phone">Телефон</label>
+                    <input class="input-text" type="tel" id="phone" required>
+                    <input type="checkbox" id="police" checked><label class="police" for="police">Согласен с <a href="#">политикой обработки данных</a></label>
+                    <button type="submit" class="main-button">Отправить</button>
+                </form>
+                <div class="form__adv">
+                    <div class="form__adv-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="60" height="60" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g id="Line"><path d="m12 23a2.8 2.8 0 0 1 -1.07-.21 14.07 14.07 0 0 1 -8.93-13.16v-4.07a3 3 0 0 1 2.35-2.93l7-1.56a3.16 3.16 0 0 1 1.3 0l7 1.56a3 3 0 0 1 2.35 2.93v4.07a14.1 14.1 0 0 1 -8.93 13.17 3 3 0 0 1 -1.07.2zm0-20h-.22l-7 1.56a1 1 0 0 0 -.78 1v4.07a12.1 12.1 0 0 0 7.67 11.31.94.94 0 0 0 .66 0 12.1 12.1 0 0 0 7.67-11.31v-4.07a1 1 0 0 0 -.78-1l-7-1.56zm-.77 11.77a1 1 0 0 1 -.7-.28l-2.28-2.24a1 1 0 0 1 0-1.42 1 1 0 0 1 1.41 0l1.58 1.55 4.11-4a1 1 0 1 1 1.41 1.43l-4.81 4.73a1 1 0 0 1 -.72.23z" fill="" data-original="#000000" class=""></path></g></g></svg>
+                        </div>
+                        <div class="form__adv-text">
+                            <span class="bold">Безопасно</span>
+                            <span class="small">Нет скрытых процентов, мелкого шрифта и комиссий.</span>
+                        </div>
+                    </div>
+                    <div class="form__adv-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="60" height="60" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g id="Line"><path d="m28 15v-3a3 3 0 0 0 -3-3h-1c0-.07 0-.13 0-.2a5.8 5.8 0 0 0 -5.8-5.8 5.71 5.71 0 0 0 -3.2 1 5.69 5.69 0 0 0 -3.2-1 5.8 5.8 0 0 0 -5.8 5.8v.2h-1a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h20a3 3 0 0 0 3-3v-3a2 2 0 0 0 2-2v-4a2 2 0 0 0 -2-2zm-6-6.2v.2h-4.4c0-.07 0-.13 0-.2a5.8 5.8 0 0 0 -1.09-3.38 3.76 3.76 0 0 1 5.49 3.38zm-14 0a3.8 3.8 0 0 1 7.6 0v.2h-7.6c0-.07 0-.13 0-.2zm18 17.2a1 1 0 0 1 -1 1h-20a1 1 0 0 1 -1-1v-14a1 1 0 0 1 1-1h20a1 1 0 0 1 1 1v3h-5a3 3 0 0 0 -3 3v2a3 3 0 0 0 3 3h5zm-5-5a1 1 0 0 1 -1-1v-2a1 1 0 0 1 1-1h7v4z" fill="" data-original="#000000"></path></g></g></svg>                    </div>
+                        <div class="form__adv-text">
+                            <span class="bold">Выгодные тарифы</span>
+                            <span class="small">Мы собрали самые выгодные тарифы для клиента.</span>
+                        </div>
+                    </div>
+                    <div class="form__adv-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="60" height="60" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g id="LIne"><path d="m16.62 9.22a1 1 0 0 1 .16 1.4l-2.92 3.66a1.89 1.89 0 0 1 .14.72 2 2 0 1 1 -2-2h.3l2.92-3.65a1 1 0 0 1 1.4-.13zm6.38 4.64a11 11 0 0 1 -1.51 5.68 3 3 0 0 1 -2.58 1.46h-13.82a3 3 0 0 1 -2.58-1.46 11 11 0 0 1 9.8-16.54 11.11 11.11 0 0 1 10.69 10.86zm-2 0a9.09 9.09 0 0 0 -8.75-8.86h-.25a9 9 0 0 0 -7.77 13.53 1 1 0 0 0 .86.47h13.82a1 1 0 0 0 .86-.47 9 9 0 0 0 1.23-4.65z" fill="" data-original="#000000" class=""></path></g></g></svg>
+                        </div>
+                        <div class="form__adv-text">
+                            <span class="bold">Быстро</span>
+                            <span class="small">От заполнения анкеты до получения средств не более 15 минут.</span>
+                        </div>
+                    </div>
+                    <div class="form__adv-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="60" height="60" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g id="LIne"><path d="m12 1a11 11 0 1 0 11 11 11 11 0 0 0 -11-11zm0 20a9 9 0 1 1 9-9 9 9 0 0 1 -9 9zm-1.5-12a1.5 1.5 0 1 1 -1.5-1.5 1.5 1.5 0 0 1 1.5 1.5zm6 6a1.5 1.5 0 1 1 -1.5-1.5 1.5 1.5 0 0 1 1.5 1.5zm.21-6.29-8 8a1 1 0 0 1 -1.42 0 1 1 0 0 1 0-1.42l8-8a1 1 0 1 1 1.42 1.42z" fill="" data-original="#000000" class=""></path></g></g></svg>
+                        </div>
+                        <div class="form__adv-text">
+                            <span class="bold">Без процентов</span>
+                            <span class="small">Получите ваш первый займ без процентов на весь срок.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="info" class="information">
+        <div class="container">
+            <h6>Общие условия и требования к заемщику</h6>
+            <span class="info-bold">Требования к заемщику:</span>
+            <p>Возраст от 18 до 100 лет;</p>
+            <p>Постоянная прописка в любом регионе РФ</p>
+            <span class="info-bold">Условия получения:</span>
+            <p>Займ предоставляется минимум на срок 62 дня, максимум на срок 2 года (730 дней). Самая высокая (максимальная) годовая процентная ставка равняется 365%. Самая низкая (минимальная) 0%. Минимальная сумма займа равняется 500 рублям, максимальная сумма 300 000 рублей. Необходимо понимать, что при несвоевременном погашении займа будут назначены штрафные санкции со стороны кредитодателя, размер которых составляет около 0,1% от суммы кредита за каждый день неуплаты, в то же время данный штраф не может превышать 10% от общей суммы займа. В такой ситуации информация о заёмщике передается в БКИ.</p>
+            <span class="info-bold">Последствия невыплаты заёмных средств:</span>
+            <p>В случае невозвращения в условленный срок суммы кредита или суммы процентов за пользование заёмными средствами кредитор вынуждено начислит штраф за просрочку платежа. Большинство кредиторов идут на уступки и дают 3 дополнительных рабочих дня для оплаты. Они предусмотрены на случай, к примеру, если банковский перевод занял больше времени, чем обычно. Однако, в случае неполучения от Вас какой-либо реакции в течение продолжительного времени, будет начислен штраф за просрочку срока погашения размером в среднем 0,10% от первоначальной суммы для займов, 0,03% от суммы задолженности в среднем для потребительских кредитов и кредитных карт.</p>
+            <p>При несоблюдении Вами условий по погашению кредитов и займов, данные о Вас могут быть переданы в реестр должников, а задолженность - коллекторскому агентству для взыскания долга. О всех приближающихся сроках платежа кредитор своевременно информирует Вас по СМС или электронной почте. Рекомендуем Вам вносить платеж в день получения данных напоминаний. Погашая задолженность в срок, Вы формируете хорошую кредитную историю, что повышает Ваши шансы в дальнейшем получить кредит на более выгодных условиях. Предложение не является оффертой. Конечные условия уточняйте при прямом общении с кредиторами.</p>
+            <span class="info-bold">Информация о полной стоимости займа и пример расчета</span>
+            <p>Займ в размере 10 000 рублей выдан на 61 день с пролонгацией, перевод средств на банковский счёт с 0% комиссией за перевод, пролонгация срока займа 0% - бесплатно. В году 365 дней, по договору ставка составляет 1% в день (годовая ставка, соответственно будет равна 365%). Сумма процентов за год составляет 36 500 руб. (10 000*365% = 36 500), за 1 день 100 руб. (36 500/365 = 100), за 61 дней соответственно 6 100 руб. (100*61 = 6100). Общая сумма платежа составляет 16 100 руб. (10 000 руб. основной долг + 6 100 руб. проценты). Других комиссий - нет. <br>
+                Минимальный срок погашения займа: 61 день; <br>
+                Максимальный срок погашения займа: 365 дней. <br>
+                ПСК (полная стоимость кредита) в процентах составляет 365% годовых. <br>
+                Максимальная годовая процентная ставка, включающая ссудный процент, а также все остальные комиссии и расходы за год, или аналогичная ставка.
+            </p>
+            <span class="info-bold">Список кредиторов:</span>
+            <p>Общество с ограниченной ответственностью Микрофинансовая компания «Мани Мен», ОГРН 1117746442670, регистрационный номер записи в государственном реестре микрофинансовых организаций 2110177000478, адрес места нахождения: Российская Федерация, 121096, г. Москва, ул. Василисы Кожиной, д. 1, офис Д13;</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#">Политика по обработке персональных данных</a>
+                <span class="copyright">© 2022 Copyright, All Rights</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

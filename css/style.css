@@ -6,6 +6,7 @@
   font-family: 'Roboto-Regular', sans-serif;
   font-weight: normal;
   color: #000;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -193,13 +194,14 @@ h5 {
 .header__nav a {
   margin: 0px 50px;
   font-size: 1.125em;
+  transition: 0.3s all ease-in-out;
+}
+.header__nav a:hover {
+  color: #00A79D;
 }
 .header__buttons {
   display: flex;
   align-items: center;
-}
-.header__buttons a.phone {
-  padding: 0;
 }
 .main {
   padding-top: 150px;
@@ -513,6 +515,7 @@ h5 {
   position: relative;
   overflow: hidden;
   cursor: grab;
+  min-height: 280px;
 }
 .feedback__slide-top {
   display: flex;
@@ -846,6 +849,160 @@ h5 {
   font-size: 14px;
   color: #fff;
 }
+.form {
+  padding: 150px 0px 40px 0px;
+  background: #f2fafc;
+}
+.form h4 {
+  max-width: none;
+}
+.form__container {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.form__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 80px;
+}
+.form form {
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+}
+.form form h6 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.form form span.safe {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  color: #00A79D;
+  margin-bottom: 20px;
+}
+.form form span.safe:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url(../img/icons/safe.svg) no-repeat center;
+  background-size: cover;
+}
+.form form .input-label {
+  position: relative;
+  top: 35px;
+  left: 20px;
+  color: #666666;
+  transition: 0.3s all ease-in-out;
+}
+.form form input {
+  padding: 15px 20px 7px 20px;
+}
+.form form .label-active {
+  left: 20px;
+  top: 18px;
+  font-size: 12px;
+  transition: 0.3s all ease-in-out;
+  color: #00A79D;
+}
+.form form input:focus {
+  border: 1px solid #00A79D;
+}
+.form form input[type='checkbox'] {
+  display: none;
+}
+.form form .police {
+  display: block;
+  padding-left: 30px;
+  font-size: 14px;
+  color: #666666;
+  margin: 20px 0px;
+  cursor: pointer;
+  position: relative;
+}
+.form form .police a {
+  color: #00A79D;
+  text-decoration: underline;
+}
+.form form .police:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url(../img/icons/formok.svg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  filter: grayscale(1);
+  transition: 0.3s all ease-in-out;
+}
+.form form input[type='checkbox']:checked ~ .police:before {
+  filter: grayscale(0);
+}
+.form form .main-button {
+  min-width: 100%;
+}
+.form__adv-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.form__adv-item .icon {
+  padding: 7px 20px 10px 15px;
+  border-radius: 62% 38% 46% 54%/60% 63% 37% 40%;
+  background: rgba(0, 167, 157, 0.1);
+  display: inline-block;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+  margin-right: 20px;
+  overflow: hidden;
+  z-index: 1;
+}
+.form__adv-item .icon svg {
+  fill: #00A79D;
+  position: relative;
+  z-index: 1;
+}
+.form__adv-item .icon:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+  background: #00A79D;
+  transition: 0.3s all ease-in-out;
+  z-index: -1;
+}
+.form__adv-text span.bold {
+  display: block;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  transition: 0.3s all ease-in-out;
+}
+.form__adv-text span.small {
+  font-size: 0.875em;
+}
+.form__adv-item:hover .icon svg {
+  fill: #c9fffb;
+}
+.form__adv-item:hover .icon:before {
+  bottom: 0;
+}
+.form__adv-item:hover .form__item-text span.bold {
+  color: #00A79D;
+}
 @media (max-width: 1400px) {
   .container {
     max-width: none;
@@ -951,6 +1108,20 @@ h5 {
   .speed__item:last-child {
     grid-row-start: 2;
     grid-column-start: span 2;
+  }
+  .form__container {
+    max-width: none;
+    padding: 0px 10px;
+  }
+  .form__wrapper {
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+  }
+  .form__adv-text span.bold {
+    font-size: 1.25em;
+  }
+  .form form {
+    padding: 30px;
   }
 }
 @media (max-width: 728px) {
@@ -1081,6 +1252,9 @@ h5 {
   }
   .feedback {
     padding: 40px 0px;
+  }
+  .feedback__slide {
+    min-height: 300px;
   }
   .feedback .swiper {
     padding: 50px 0px 0px 0px;
